@@ -1,7 +1,11 @@
 <template>
   <div class="container">
-    <h2>{{items.TITLE}}</h2>
-    <div>{{items.COMMENT}}</div>
+    <div>
+      <h2>{{items.TITLE}}</h2>
+      <div>{{items.COMMENT}}</div>
+      <div>{{items.WRITER}}</div>
+      <div>{{items.DATE}}</div>
+    </div>
   </div>
 </template>
 
