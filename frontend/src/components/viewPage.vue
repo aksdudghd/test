@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h2>{{items.TITLE}}</h2>
-    <div>{{items.MEMO}}</div>
+    <div>{{items.COMMENT}}</div>
   </div>
 </template>
 
