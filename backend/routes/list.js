@@ -5,7 +5,7 @@ var lists = [];
 var db = require('../mysql-db');
 db.connect();
 
-db.query('SELECT * FROM hms_board', function (error, results, fields) {
+db.query('SELECT * FROM board', function (error, results, fields) {
     if (error) {
         console.log(error);
     };

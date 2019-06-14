@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>{{items.TITLE}}</h1>
+    <h2>{{items.TITLE}}</h2>
     <div>{{items.MEMO}}</div>
   </div>
 </template>
@@ -24,8 +24,8 @@ export default {
 }
 </script>
 
-<style scoped lang="scss" scope>
+<style lang="scss" scoped>
 .container {
-  text-align: left;
+  
 }
 </style>

@@ -1,16 +1,16 @@
 <template>
   <div class="container">
-    <h2>List</h2>
+    <h2>service</h2>
     <transition-group tag="ul" name="list">
-      <li v-for="(item, idx) in items" v-bind:key="idx">
-        <div>
-          <span class="no">{{idx}}</span>
-          <span class="title">{{ item.TITLE}}</span>
-        </div>
-        <router-link :to="{ name: 'view', params: { UID: item.UID }}">detail</router-link>
+      <li v-for="(item, idx) in items" v-bind:key="idx" class="list-item">
+        <div>{{idx}}</div>
+        <div>ip4 : {{ item.ip4}}</div>
+        <div>ip6 : {{ item.ip6}}</div>
+        <div>interface : {{ item.iface}}</div>
+        <div>mac : {{ item.mac}}</div>
       </li>
     </transition-group>
-    <button @click="addPosts" class="button">add</button>
+    
   </div>
 </template>
 
@@ -19,31 +19,21 @@ export default {
   created() {
     //const baseURI = 'http://localhost:3000/api';
     const baseURI = "/api";
-    this.$http.get(`${baseURI}/list`).then(result => {
+    this.$http.get(`${baseURI}/user`).then(result => {
       this.items = result.data;
+      //console.log(this.items)
     });
   },
   data() {
     return {
       items: []
     };
-  },
-  methods: {
-    addPosts: function() {
-      this.items.push({
-        title: `${Math.floor(Math.random() * 10 + 1)} post`
-      });
-    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.button {
-  padding: 12px 48px;
-  background: #efefef;
-  width: 100%;
-}
+
 .container {
   ul {
     position: relative;
@@ -51,20 +41,18 @@ export default {
     margin: 0px;
     width: 100%;
     /*width: 750px;*/
-    display: flex;
-    flex-direction: column-reverse;
   }
 
   li {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 8px 12px;
     width: 100%;
     min-height: 48px;
     border-bottom: 1px solid #efefef;
-    &:last-child {
+    &:first-child {
       border-top: 1px solid #efefef;
     }
   }
