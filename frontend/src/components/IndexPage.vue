@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container main">
         <img src="../assets/logo.svg">
     </div>
 </template>
@@ -20,6 +20,9 @@ export default {
   max-height: 100%;
 
   min-width: 320px;
+
+  justify-content: center;
+  align-items: center;
   
   img{
     padding: 0;

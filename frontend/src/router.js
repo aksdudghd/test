@@ -7,8 +7,9 @@ import NotFoundPage from '@/components/404'
 import IndexPage from '@/components/IndexPage'
 import ServicePage from '@/components/ServicePage'
 import AboutPage from '@/components/AboutPage'
-import listPage from '@/components/listPage'
-import viewPage from '@/components/viewPage'
+import SupportPage from '@/components/SupportPage'
+import ListPage from '@/components/ListPage'
+import ViewPage from '@/components/ViewPage'
 
 
 export default new Router({
@@ -35,14 +36,19 @@ export default new Router({
       component: AboutPage
     },
     {
+      path: '/support',
+      name: 'support',
+      component: SupportPage
+    },
+    {
       path: '/list',
       name: 'list',
-      component: listPage
+      component: ListPage
     },
     {
       path: '/list/:UID',
       name: 'view',
-      component: viewPage
+      component: ViewPage
     },
 
   ]

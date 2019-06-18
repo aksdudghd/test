@@ -10,15 +10,15 @@
         <router-link :to="{ name: 'view', params: { UID: item.UID }}">detail</router-link>
       </li>
     </transition-group>
-    <button @click="addPosts" class="button">add</button>
+    <button @click="addPosts" class="button button-inverted">add</button>
   </div>
 </template>
 
 <script>
 export default {
   created() {
-    //const baseURI = 'http://localhost:3000/api';
-    const baseURI = "/api";
+    const baseURI = 'http://59.4.223.150:3000/api';
+    //const baseURI = "/api";
     this.$http.get(`${baseURI}/list`).then(result => {
       this.items = result.data;
     });
@@ -40,7 +40,6 @@ export default {
 
 <style lang="scss" scoped>
 .button {
-  padding: 12px 48px;
   background: #efefef;
   width: 100%;
 }
