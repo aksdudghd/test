@@ -71,7 +71,7 @@ li {
     &.horizental {
       left: 0;
       top:50%;
-      margin-top: -320px;
+      margin-top: -330px;
       height: 640px;
       width: 100%;
       flex-direction: column;

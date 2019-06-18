@@ -7,7 +7,7 @@
           <span class="no">{{idx}}</span>
           <span class="title">{{ item.TITLE}}</span>
         </div>
-        <router-link :to="{ name: 'view', params: { UID: item.UID }}">detail</router-link>
+        <router-link :to="{ name: 'view', params: { CATAGORY: {CATAGORY}, UID: item.UID }}">detail</router-link>
       </li>
     </transition-group>
     <button @click="addPosts" class="button button-inverted">add</button>
@@ -17,15 +17,19 @@
 <script>
 export default {
   created() {
-    const baseURI = 'http://59.4.223.150:3000/api';
-    //const baseURI = "/api";
-    this.$http.get(`${baseURI}/list`).then(result => {
+    //const baseURI = 'http://59.4.223.150:3000/api';
+    const baseURI = "/api";
+    var CATAGORY = '' || this.$route.params.CATAGORY;
+    console.log('====',CATAGORY)
+    this.$http.get(`${baseURI}/list/${CATAGORY}`).then(result => {
       this.items = result.data;
     });
   },
   data() {
     return {
-      items: []
+      items: [
+        
+      ]
     };
   },
   methods: {

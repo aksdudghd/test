@@ -41,12 +41,22 @@ export default new Router({
       component: SupportPage
     },
     {
-      path: '/list',
-      name: 'list',
+      path: '/support/notice',
+      name: 'notice',
       component: ListPage
     },
     {
-      path: '/list/:UID',
+      path: '/support/faq',
+      name: 'faq',
+      component: ListPage,
+    },
+    {
+      path: '/support/data',
+      name: 'data',
+      component: ListPage
+    },
+    {
+      path: '/support/:UID',
       name: 'view',
       component: ViewPage
     },

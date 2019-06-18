@@ -26,10 +26,10 @@ router.get('/', function(req, res, next) {
     res.send(list);
 });*/
 
-router.get('/:UID', function (req, res, next) {
-    var UID = req.params.UID;
+router.get('/:CATAGORY', function (req, res, next) {
+    var CATAGORY = req.params.CATAGORY;
     var list = lists.filter(function (movie) {
-        return movie.UID === UID;
+        return movie.CATAGORY === CATAGORY;
     });
     res.send(list);
 });

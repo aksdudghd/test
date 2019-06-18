@@ -18,14 +18,15 @@
         <h2>문제해결</h2>
         <p>비슷한 문제점 해결 및 새로운 궁금증을 도와드립니다.</p>
       </div>
-      <button href class="button">도와줄께</button>
+      
+      <router-link class="button" :to="{ name: 'faq', params: { CATAGORY: 'faq'}}">도와줄께</router-link>
     </section>
     <section class="section3 s188-320">
       <div class="section-title">
         <h2>자료실</h2>
         <p>필요자료들</p>
       </div>
-      <button href class="button">다운로드</button>
+      <router-link class="button" :to="{ name: 'data', params: { CATAGORY: 'data'}}">다운로드</router-link>
     </section>
   </div>
 </template>
