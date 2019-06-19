@@ -28,8 +28,6 @@ router.get('/:CATAGORY', function (req, res, next) {
 
 router.get('/:CATAGORY/:UID', function (req, res, next) {
     var UID = req.params.UID;
-    var CATAGORY = req.params.CATAGORY;
-    console.log(UID, CATAGORY)
     var list = lists.filter(function (movie) {
         return movie.UID === UID;
     });
