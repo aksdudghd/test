@@ -19,8 +19,8 @@
 <script>
 export default {
   created() {
-    //const baseURI = 'http://59.4.223.150:3000/api';
-    const baseURI = "/api";
+    const baseURI = 'http://59.4.223.150:3000/api';
+    //const baseURI = "/api";
     var CATAGORY = '' || this.$route.params.CATAGORY;
     //console.log('====',CATAGORY)
     this.$http.get(`${baseURI}/list/${CATAGORY}`).then(result => {
