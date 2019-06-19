@@ -1,0 +1,91 @@
+<template>
+  <div class="container main">
+    <!--<img src="../assets/logo.svg">-->
+    <svg
+      version="1.1"
+      id="logo"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="-72 165 320 640"
+      xml:space="preserve"
+    >
+      <rect x="33.5" y="469.5" class="st0" width="5.8" height="24.5"></rect>
+      <polygon
+        class="st0"
+        points="32.1,479 29.9,479 29.9,469.5 24.1,469.5 24.1,494 29.9,494 29.9,484.8 32.1,484.8 "
+      ></polygon>
+      <rect y="469.6" class="st0" width="21" height="5.8"></rect>
+      <path
+        class="st0"
+        d="M13.4,464.9c0,1.6-1.3,2.9-2.9,2.9c-1.6,0-2.9-1.3-2.9-2.9s1.3-2.9,2.9-2.9C12.1,462,13.4,463.3,13.4,464.9
+	L13.4,464.9z"
+      ></path>
+      <rect x="84.8" class="st0" width="5.7" height="500"></rect>
+      <polygon
+        class="st0"
+        points="90.6,505.9 90.5,505.8 90.6,505.8 90.6,500 69.6,500 69.6,505.8 82.4,505.8 69.6,518.6 69.6,518.6 
+	69.6,518.6 69.6,524.5 90.6,524.5 90.6,518.6 77.8,518.6 "
+      ></polygon>
+      <polygon
+        class="st0"
+        points="60.3,469.7 54.5,469.7 54.5,488.4 54.5,494.2 68.2,494.2 68.2,488.4 60.3,488.4 60.3,475.6 69.6,475.6 
+	69.6,494.2 75.4,494.2 75.4,475.6 75.4,469.7 "
+      ></polygon>
+      <path
+        class="st0"
+        d="M163.9,488.4H161v-12.8h2.9v-5.8H143v5.8h2.9v12.8H143v5.8h20.9L163.9,488.4z M151.7,488.4v-12.8h3.5v12.8
+	H151.7z"
+      ></path>
+      <rect x="105.7" y="500" class="st0" width="94.3" height="5.8"></rect>
+      <rect x="179.1" y="469.7" class="st0" width="20.9" height="5.8"></rect>
+      <rect x="179.1" y="479" class="st0" width="20.9" height="5.8"></rect>
+      <rect x="179.1" y="488.4" class="st0" width="20.9" height="5.8"></rect>
+      <polygon
+        class="st0"
+        points="110.8,493.7 117.7,481.3 124.2,493 129.3,490.2 117.9,469.7 117.9,469.7 117.9,469.7 117.5,469.7 
+	117.5,469.8 114.4,475.2 114.3,475.3 114.3,475.4 105.7,490.8 "
+      ></polygon>
+      <path
+        class="st0"
+        d="M114.7,495.9c0,1.6,1.3,2.9,2.9,2.9s2.9-1.3,2.9-2.9s-1.3-2.9-2.9-2.9S114.7,494.3,114.7,495.9L114.7,495.9z"
+      ></path>
+      <path
+        class="st0"
+        d="M14.5,473.9c-5.3-2.2-11.5,0.3-13.7,5.7s0.3,11.5,5.7,13.7s11.5-0.3,13.7-5.7c0,0,0,0,0,0
+	C22.4,482.2,19.8,476.1,14.5,473.9z M10.5,488.2c-2.6,0-4.7-2.1-4.7-4.6c0-2.6,2.1-4.7,4.6-4.7s4.7,2.1,4.7,4.6c0,0,0,0,0,0
+	C15.1,486.1,13.1,488.2,10.5,488.2C10.5,488.2,10.5,488.2,10.5,488.2L10.5,488.2z"
+      ></path>
+    </svg>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped>
+.st0 {
+  fill:#fff;
+}
+.container {
+  background-color: #1e9cd9;
+  height: 640px;
+  width: 1500px;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  min-width: 320px;
+
+  justify-content: center;
+  align-items: center;
+
+  img {
+    padding: 0;
+    width: auto;
+    height: 100%;
+  }
+}
+</style>

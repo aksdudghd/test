@@ -18,14 +18,6 @@ router.get('/', function(req, res, next) {
     res.send(lists);
 });
 
-/*router.get('/:WRITER', function (req, res, next) {
-    var WRITER = req.params.WRITER;
-    var list = lists.filter(function (movie) {
-        return movie.WRITER === WRITER;
-    });
-    res.send(list);
-});*/
-
 router.get('/:CATAGORY', function (req, res, next) {
     var CATAGORY = req.params.CATAGORY;
     var list = lists.filter(function (movie) {
@@ -33,5 +25,23 @@ router.get('/:CATAGORY', function (req, res, next) {
     });
     res.send(list);
 });
+
+router.get('/:CATAGORY/:UID', function (req, res, next) {
+    var UID = req.params.UID;
+    var CATAGORY = req.params.CATAGORY;
+    console.log(UID, CATAGORY)
+    var list = lists.filter(function (movie) {
+        return movie.UID === UID;
+    });
+    res.send(list);
+});
+
+/*router.get('/:CATAGORY', function (req, res, next) {
+    var CATAGORY = req.params.CATAGORY;
+    var list = lists.filter(function (movie) {
+        return movie.CATAGORY === CATAGORY;
+    });
+    res.send(list);
+});*/
 
 module.exports = router;

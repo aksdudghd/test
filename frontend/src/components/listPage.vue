@@ -5,9 +5,11 @@
       <li v-for="(item, idx) in items" v-bind:key="idx">
         <div>
           <span class="no">{{idx}}</span>
-          <span class="title">{{ item.TITLE}}</span>
+          <span class="catagory">{{item.CATAGORY}}</span>
+          <span class="uid">{{item.UID}}</span>
+          <span class="title">{{item.TITLE}}</span>
         </div>
-        <router-link :to="{ name: 'view', params: { CATAGORY: {CATAGORY}, UID: item.UID }}">detail</router-link>
+        <router-link :to="{ name: 'view', params: { CATAGORY: item.CATAGORY, UID: item.UID }}">detail</router-link>
       </li>
     </transition-group>
     <button @click="addPosts" class="button button-inverted">add</button>
@@ -20,7 +22,7 @@ export default {
     //const baseURI = 'http://59.4.223.150:3000/api';
     const baseURI = "/api";
     var CATAGORY = '' || this.$route.params.CATAGORY;
-    console.log('====',CATAGORY)
+    //console.log('====',CATAGORY)
     this.$http.get(`${baseURI}/list/${CATAGORY}`).then(result => {
       this.items = result.data;
     });

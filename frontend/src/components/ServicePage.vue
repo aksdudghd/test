@@ -29,7 +29,7 @@
         <h2>솔루션</h2>
         <p class>손쉽게 결과물을 제작하는 제품</p>
       </div>
-      <button href class="button">제품 보기</button>
+      <router-link class="button" :to="{ name: 'solution', params: { id: '솔루션'}}">제품 보기</router-link>
     </section>
 
     <section class="section2 s375-640">
@@ -37,7 +37,7 @@
         <h2>프로그램 제작</h2>
         <p class>사용자의 요구에 맞는 최적화된 프로그램을 만들어 드립니다.</p>
       </div>
-      <button href class="button">어떻게 만드나 보기</button>
+      <router-link class="button" :to="{ name: 'program', params: { id: '프로그램'}}">어떻게 만드나 보기</router-link>
     </section>
 
     <section class="section3 s375-320">
@@ -45,7 +45,7 @@
         <h2>작업물</h2>
         <p class>몇가지들.</p>
       </div>
-      <button href class="button">더 보기</button>
+      <router-link class="button" :to="{ name: 'work', params: { id: '작업물'}}">더 보기</router-link>
     </section>
   </div>
 </template>
@@ -53,11 +53,10 @@
 <script>
 export default {
   created() {
-    const baseURI = "http://59.4.223.150:3000/api";
-    //const baseURI = "/api";
+    //const baseURI = "http://59.4.223.150:3000/api";
+    const baseURI = "/api";
     this.$http.get(`${baseURI}/user`).then(result => {
       this.items = result.data;
-      //console.log(this.items)
     });
   },
   data() {
@@ -74,9 +73,25 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+
+  /*.section1 {
+    background-image: url("../assets/images/carl-heyerdahl-181868-unsplash.jpg");
+  }*/
   .section2 {
-    background-image: url("../assets/images/ali-morshedlou-566510.jpg");
+    background-image: url("../assets/images/sleek-playstation-controller-picjumbo-com.jpg");
+    /*column-rule: .section-title{
+      h2{
+        color: #0277bd
+      }
+      p{
+        color: #1e9cd9;
+      }
+    }*/
   }
+  /*.section2.section3 {
+    background-image: url("../assets/images/ali-morshedlou-566510.jpg");
+  }*/
+
   .s375-640 {
     width: 375px;
     height: 640px;
@@ -86,52 +101,5 @@ export default {
     height: 320px;
   }
 }
-/*.container {
-  ul {
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-  }
-  li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 8px 12px;
-    width: 100%;
-    min-height: 48px;
-    border-bottom: 1px solid #efefef;
-    &:first-child {
-      border-top: 1px solid #efefef;
-    }
-  }
 
-  .list-enter-active,
-  .list-leave-active,
-  .list-move {
-    transition: 500ms cubic-bezier(0.59, 0.12, 0.34, 0.95);
-    transition-property: opacity, transform;
-  }
-
-  .list-enter {
-    opacity: 0;
-    transform: translateX(50px) scaleY(1);
-  }
-
-  .list-enter-to {
-    opacity: 1;
-    transform: translateX(0) scaleY(1);
-  }
-
-  .list-leave-active {
-    position: absolute;
-  }
-
-  .list-leave-to {
-    opacity: 0;
-    transform: scaleY(1);
-    transform-origin: center top;
-  }
-}*/
 </style>
