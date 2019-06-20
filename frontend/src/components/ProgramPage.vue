@@ -17,10 +17,10 @@
       </div>
     </section>
     <section class="section">
-      <h2>■ S/W, H/W 설치 및 통합관리</h2>
+      <h2>■ S/W설치 및 통합관리</h2>
       <div class="section-title">
         <h3>SoftWare/Hardware Management</h3>
-        <p>검증된 품질체계를 기반으로 안정적인 시스템 운영 및 유지보수 제공</p>
+        <p>고객사에 시스템에 가장 적합한 S/W설치 및 유지보수 제공</p>
       </div>
     </section>
         <section class="section">
