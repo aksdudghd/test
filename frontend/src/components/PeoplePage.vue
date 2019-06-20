@@ -15,7 +15,7 @@
       <div class="section-title">
         <p></p>
         <h3><strong> CEO & Senior Consultant</strong></h3>
-        <h4>대표이사 백송치</h4>
+        <h3>대표이사 백송치</h3>
         <p>paeksc@ihaemil.com</p>
       </div> 
       <p></p>

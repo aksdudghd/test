@@ -20,16 +20,16 @@
         </h2>
         <p></p>
     
-        <p>"고객의 편의는 높이고 브라우저 호환성은 넓히다." </p>
-
-        <p
-          class
-        >해밀소프트의 모든 제품은 Non-ActiveX 를 지향하며 
+        <h4>"고객의 편의는 높이고 브라우저 호환성은 넓히다." </h4>
+        <p></p> 
+ 
+        <h4>
+        해밀소프트의 모든 제품은 Non-ActiveX를 지향하며 
         사용자에게 거부감 없는 프로그램으로, 
-        서비스 제공 업체와 사용자의 편의성 향상을 위해 노력하고 있습니다.</p>
+        서비스 제공 업체와 사용자의 편의성 향상을 위해 노력하고 있습니다.</h4>
      
-
-
+        <p></p>
+    
         <strong> ■&nbsp;&nbsp;Non-ActiveX, Non-PlugIn</strong> 
         <p></p>
         <strong> ■&nbsp;&nbsp;HTML5 기반의 웹 표준 준수</strong>
@@ -46,7 +46,9 @@
     <section class="section1 s375-640">
       <div class="section-title">
         <h2>솔루션</h2>
-        <p class>쉽고 편리하며 강력한 Reporting Tool을 소개합니다.</p>
+        <!-- <p class>쉽고 편리하며 강력한 Reporting Tool을 소개합니다.</p> -->
+        <h4>쉽고 강력한 Reporting Tool.</h4><BR/><h4> ATTO를 소개합니다.</h4>
+
       </div>
       <router-link class="button" :to="{ name: 'solution', params: { id: '솔루션'}}">제품 보기</router-link>
     </section>
@@ -54,7 +56,8 @@
     <section class="section2 s375-640">
       <div class="section-title">
         <h2>프로그램 개발 및 운영</h2>
-        <p class>사용자의 요구에 맞는 최적화된 프로그램을 만들어 드립니다.</p>
+        <!-- <p class>사용자의 요구에 맞는 최적화된 프로그램을 만들어 드립니다.</p> -->
+        <h4>사용자의 요구에 맞는 최적화된 프로그램을 만듭니다.</h4>
       </div>
       <router-link class="button" :to="{ name: 'program', params: { id: '프로그램'}}">주요 사업 보기</router-link>
     </section>
@@ -62,7 +65,8 @@
     <section class="section3 s375-320">
       <div class="section-title">
         <h2>프로젝트</h2>
-        <p class>쉽고 편한 IT서비스를 통해 고객만족과 가치를 창조합니다.</p>
+        <!-- <p class>쉽고 편한 IT서비스를 통해 고객만족과 가치를 창조합니다.</p> -->
+        <h4>쉽고 편한 IT서비스를 통해 고객만족과 가치를 창조합니다.</h4>
       </div>
       <router-link class="button" :to="{ name: 'work', params: { id: '작업물'}}">더 보기</router-link>
     </section>
