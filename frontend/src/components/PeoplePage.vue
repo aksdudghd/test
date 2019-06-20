@@ -4,7 +4,10 @@
       <h2>조직도</h2>
       <div class="section-title">
         <h3></h3>
-        <p>내용</p>
+        <p></p>
+        <p>고급</p>
+        <p>중급</p>
+        <p>초급</p>
       </div>
     </section>
   </div>

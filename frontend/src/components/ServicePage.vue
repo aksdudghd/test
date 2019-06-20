@@ -18,9 +18,28 @@
         <h2>
           <span class>ActiveX 에서 탈출</span>
         </h2>
+        <p></p>
+    
+        <p>"고객의 편의는 높이고 브라우저 호환성은 넓히다." </p>
+
         <p
           class
-        >해밀소프트의 모든 프로그램은 액티브X 로부터 탈출 사용자에게 거부감 없는 프로그램 으로, 서비스 제공 업체와 사용자를 조금 더 편하게 하기 위해 다음과 같이 노력하고 있습니다</p>
+        >해밀소프트의 모든 제품은 Non-ActiveX 를 지향하며 
+        사용자에게 거부감 없는 프로그램으로, 
+        서비스 제공 업체와 사용자의 편의성 향상을 위해 노력하고 있습니다.</p>
+     
+
+
+        <strong> ■&nbsp;&nbsp;Non-ActiveX, Non-PlugIn</strong> 
+        <p></p>
+        <strong> ■&nbsp;&nbsp;HTML5 기반의 웹 표준 준수</strong>
+        <p></p>
+        <strong> ■&nbsp;&nbsp;IE, 크롬, 사파리, 파이어폭스 등의 웹브라우저 지원</strong>
+        <p></p>
+        <strong> ■&nbsp;&nbsp;높은 보안성 및 다양한 사용자 환경 지원</strong>
+        <p></p>
+
+        
       </div>
     </section>
 
@@ -42,8 +61,8 @@
 
     <section class="section3 s375-320">
       <div class="section-title">
-        <h2>작업물</h2>
-        <p class>몇가지들.</p>
+        <h2>프로젝트</h2>
+        <p class>쉽고 편한 IT서비스를 통해 고객만족과 가치를 창조합니다.</p>
       </div>
       <router-link class="button" :to="{ name: 'work', params: { id: '작업물'}}">더 보기</router-link>
     </section>
