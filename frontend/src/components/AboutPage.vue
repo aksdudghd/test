@@ -4,7 +4,7 @@
       <div class="section-title">
         <h2>IT 비즈니스 시작의 동반자</h2>
         <!-- <p>HAEMIL SOFT는 지속적인 혁신을 통해 모두 쉽고 편리한 툴을 만드는게 목표입니다.</p> -->
-        <p>HAEMIL SOFT는 항상 고객의 긍정적인 동반자가 되도록 항상 노력하고 있습니다.</p>
+        <p>HAEMIL SOFT는 항상 고객의 긍정적인 동반자가 되도록 노력하고 있습니다.</p>
       </div>
     </section>
     <section class="section1 s375-320">
