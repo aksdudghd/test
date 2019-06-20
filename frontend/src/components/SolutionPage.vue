@@ -2,11 +2,11 @@
   <div class="container">
     <section class="section">
       <h2>
-        <strong>ATTO</strong>
+        <strong>ATTO Report</strong>
         </h2>
       <div class="section-title">
         
-        <h3>최적의 사용자 편의성을 지원하는 양식 개발환경(Form Editor)</h3>
+        <h3>최적의 사용자 편의성을 지원하는 레포트 개발환경(Form Editor)</h3>
             <h4>&nbsp;</h4>
         <strong>
          ■&nbsp;&nbsp;Non-ActiveX, Non-PlugIn 

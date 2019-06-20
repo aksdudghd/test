@@ -46,14 +46,14 @@
     <section class="section1 s375-640">
       <div class="section-title">
         <h2>솔루션</h2>
-        <p class>다양하고 편리한 Reporting Tool</p>
+        <p class>쉽고 편리하며 강력한 Reporting Tool을 소개합니다.</p>
       </div>
       <router-link class="button" :to="{ name: 'solution', params: { id: '솔루션'}}">제품 보기</router-link>
     </section>
 
     <section class="section2 s375-640">
       <div class="section-title">
-        <h2>프로그램 개발</h2>
+        <h2>프로그램 개발 및 운영</h2>
         <p class>사용자의 요구에 맞는 최적화된 프로그램을 만들어 드립니다.</p>
       </div>
       <router-link class="button" :to="{ name: 'program', params: { id: '프로그램'}}">주요 사업 보기</router-link>
