@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <section class="section">
+      <p></p>
       <h2>■ 소프트웨어 개발</h2>
       <div class="section-title">
         <h3>Software Development</h3>
@@ -19,7 +20,7 @@
     <section class="section">
       <h2>■ S/W설치 및 통합관리</h2>
       <div class="section-title">
-        <h3>SoftWare/Hardware Management</h3>
+        <h3>SoftWare Management</h3>
         <p>고객사에 시스템에 가장 적합한 S/W설치 및 유지보수 제공</p>
       </div>
     </section>

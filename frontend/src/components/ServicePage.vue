@@ -53,7 +53,7 @@
 
     <section class="section2 s375-640">
       <div class="section-title">
-        <h2>프로그램 제작</h2>
+        <h2>프로그램 개발</h2>
         <p class>사용자의 요구에 맞는 최적화된 프로그램을 만들어 드립니다.</p>
       </div>
       <router-link class="button" :to="{ name: 'program', params: { id: '프로그램'}}">주요 사업 보기</router-link>
