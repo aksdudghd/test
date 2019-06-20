@@ -4,10 +4,10 @@
 
     <header id="header">
       <nav id="nav">
-        <router-link class="button button-inverted" to="/">시작</router-link>
-        <router-link class="button button-inverted" to="/service">하는일</router-link>
-        <router-link class="button button-inverted" to="/about">소개</router-link>
-        <router-link class="button button-inverted" to="/support">지원</router-link>
+        <router-link class="button button-inverted" to="/">HOME</router-link>
+        <router-link class="button button-inverted" to="/service">SERVICE</router-link>
+        <router-link class="button button-inverted" to="/about">ABOUT</router-link>
+        <router-link class="button button-inverted" to="/support">SUPPORT</router-link>
       </nav>
     </header>
 

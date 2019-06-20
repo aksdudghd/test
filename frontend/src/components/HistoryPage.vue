@@ -3,7 +3,7 @@
     <section class="section">
       <h2>연혁</h2>
       <div class="section-title">
-        <h3>고객의 요구에따른 </h3>
+        <!-- <h3></h3> -->
         <p>내용</p>
       </div>
     </section>
