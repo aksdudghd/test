@@ -46,7 +46,7 @@
     <section class="section1 s375-640">
       <div class="section-title">
         <h2>솔루션</h2>
-        <p class>손쉽게 결과물을 제작하는 제품</p>
+        <p class>다양하고 편리한 Reporting Tool</p>
       </div>
       <router-link class="button" :to="{ name: 'solution', params: { id: '솔루션'}}">제품 보기</router-link>
     </section>
@@ -56,7 +56,7 @@
         <h2>프로그램 제작</h2>
         <p class>사용자의 요구에 맞는 최적화된 프로그램을 만들어 드립니다.</p>
       </div>
-      <router-link class="button" :to="{ name: 'program', params: { id: '프로그램'}}">어떻게 만드나 보기</router-link>
+      <router-link class="button" :to="{ name: 'program', params: { id: '프로그램'}}">주요 사업 보기</router-link>
     </section>
 
     <section class="section3 s375-320">
